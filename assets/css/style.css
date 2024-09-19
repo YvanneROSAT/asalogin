@@ -1,0 +1,89 @@
+:root {
+    --color-background: #f5f5f5;
+    --image-background: url('../images/background.jpg');
+    --color-primary: #ff6f61;
+    --color-secondary: #ff9f1c;
+    --color-tertiary: #ffbf69;
+    --color-text: #333;
+    --color-black: #000;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-connexion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-connexion {
+    background-color: var(--color-background);
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.logo-connexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-card-connexion {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form-connexion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .label-mdp {
+    margin-top: 1.5em;
+} */
+
+.input-custom {
+    display: flex;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--color-black);
+    background-color: var(--background-color);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    outline-offset: var(--background-color);
+}
+
+.btn-submit {
+    background-color: var(--color-black);
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 20px;
+
+    a {
+        color: var(--color-background);
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container-connexion {
+        width: 80%;
+    }
+    
+}
